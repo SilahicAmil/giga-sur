@@ -1,7 +1,16 @@
+import NavItems from "./NavItems";
+
 const BottomNav = ({}) => {
   return (
-    <div className="z-1 flex w-full h-16 bg-red-300 rounded-lg justify-center items-center">
-      <button className="h-full rounded-xl bg-red-50">Hello 123</button>
+    <div className="z-1 gap-4 flex w-3/6 h-24 bg-red-300 rounded-lg justify-center items-center m-auto">
+      <NavItems />
+      <NavItems />
+      <NavItems />
+      <NavItems />
+      <NavItems />
+      <NavItems />
+      <NavItems />
+      <NavItems />
     </div>
   );
 };

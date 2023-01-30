@@ -6,7 +6,9 @@ function App() {
     <>
       <TopNav />
       <div className="bg-red-500 w-[100vw] h-full ">
-        <h1 className="text-sm h-5/6 ">Hello World</h1>
+        <div className="text-xl ml-auto flex w-full h-5/6 ">
+          <h1 className="flex ml-auto">Hello World</h1>
+        </div>
         <BottomNav />
       </div>
     </>

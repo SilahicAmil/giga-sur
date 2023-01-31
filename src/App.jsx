@@ -1,4 +1,5 @@
 import BottomNav from "../components/Navigation/BottomNav/BottomNav";
+import DesktopItem from "../components/Desktop/DesktopItem";
 import TopNav from "../components/Navigation/TopNav/TopNav";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <TopNav />
       <div className="bg-red-500 w-[100vw] h-full ">
         <div className="text-xl ml-auto flex w-full h-5/6 ">
-          <h1 className="flex ml-auto">Hello World</h1>
+          <DesktopItem />
         </div>
         <BottomNav />
       </div>

@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <TopNav />
-      <div className="bg-red-500 w-[100vw] h-full ">
-        <div className="text-xl ml-auto flex w-full h-5/6 ">
+      <div className="h-full w-[100vw] bg-red-500 ">
+        <div className="ml-auto flex h-5/6 w-full text-xl ">
           <DesktopItem />
         </div>
         <BottomNav />

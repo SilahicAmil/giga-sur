@@ -2,7 +2,7 @@ import NavItems from "./NavItems";
 
 const BottomNav = ({}) => {
   return (
-    <div className="z-1 gap-4 flex w-3/6 h-24 bg-red-300 rounded-lg justify-center items-center m-auto">
+    <div className="z-1 m-auto flex h-24 w-3/6 items-center justify-center gap-4 rounded-lg bg-red-300">
       <NavItems />
       <NavItems />
       <NavItems />

@@ -12,7 +12,7 @@ const DesktopItem = ({}) => {
         {showModal &&
           createPortal(
             <div
-              className="bg-blue-500 flex items-center justify-center absolute m-auto w-64 left-0 top-0 right-0 bottom-0 h-64 "
+              className="absolute left-0 top-0 right-0 bottom-0 m-auto flex h-64 w-64 items-center justify-center bg-blue-500 "
               onClick={() => setShowModal(false)}
             >
               This is the modal lol

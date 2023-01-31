@@ -2,18 +2,18 @@ import { AiFillApple } from "react-icons/ai";
 
 const TopNav = ({}) => {
   return (
-    <div className="flex w-full h-8 items-center justify-center bg-transparent">
+    <div className="flex h-8 w-full items-center justify-center bg-transparent">
       <nav className="flex">
         <div className="flex gap-4">
-          <div className="text-lg h-full ml-2 items-center flex text-white ">
+          <div className="ml-2 flex h-full items-center text-lg text-white ">
             <AiFillApple />
           </div>
 
-          <p className="text-sm flex items-center">Finder</p>
+          <p className="flex items-center text-sm">Finder</p>
         </div>
 
-        <div className="flex items-center ml-4 ">
-          <ul className="text-sm flex gap-3 items-center">
+        <div className="ml-4 flex items-center ">
+          <ul className="flex items-center gap-3 text-sm">
             <li>File</li>
             <li>Edit</li>
             <li>View</li>
@@ -36,7 +36,7 @@ const TopNav = ({}) => {
         <div>
           <AiFillApple />
         </div>
-        <div className="flex items-center justify-center text-sm mr-4">
+        <div className="mr-4 flex items-center justify-center text-sm">
           {/* need to make this based off the current date and time */}
           <p>Mon Jan 30 03:33 PM</p>
         </div>

@@ -1,10 +1,13 @@
-import { AiFillApple } from "react-icons/ai";
+import { AiFillApple, AiOutlineSearch, AiOutlineWifi } from "react-icons/ai";
+
+import { FiBluetooth } from "react-icons/fi";
+import { TiBatteryCharge } from "react-icons/ti";
 
 const TopNav = ({}) => {
   const currDate = new Date().toLocaleString();
 
   return (
-    <div className="flex h-8 w-full items-center justify-center  bg-gray-800 text-white shadow-2xl">
+    <div className=" flex h-8 w-full items-center justify-center bg-gray-800  font-sans text-white shadow-2xl">
       <nav className="flex">
         <div className="flex gap-4">
           <div className="ml-2 flex h-full items-center text-lg text-white ">
@@ -25,20 +28,20 @@ const TopNav = ({}) => {
           </ul>
         </div>
       </nav>
-      <div className="ml-auto flex items-center gap-4 text-sm">
+      <div className="ml-auto flex items-center gap-4">
         <div>
-          <AiFillApple />
+          <AiOutlineSearch className="text-lg" />
         </div>
         <div>
-          <AiFillApple />
+          <FiBluetooth className="text-md" />
         </div>
         <div>
-          <AiFillApple />
+          <AiOutlineWifi className="text-xl" />
         </div>
-        <div>
-          <AiFillApple />
+        <div className="">
+          <TiBatteryCharge className="text-2xl" />
         </div>
-        <div className="text-md mr-4 flex items-center justify-center">
+        <div className="mr-4 flex items-center justify-center text-sm">
           {/* need to make this based off the current date and time */}
           <p>{currDate}</p>
         </div>

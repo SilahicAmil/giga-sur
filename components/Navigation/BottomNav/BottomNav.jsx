@@ -8,7 +8,7 @@ const BottomNav = ({}) => {
   const modalContent = document.getElementById("modal-content");
 
   return (
-    <div className="border-1 shadow-x z-50 m-auto flex h-24 w-2/6 items-center justify-center gap-14 rounded-lg border border-white bg-transparent">
+    <div className="border-1 z-50 m-auto flex h-24 w-2/6 items-center justify-center gap-14 rounded-lg border border-white bg-transparent shadow-2xl">
       <BottomNavItems>
         <img
           alt="finder image icon"

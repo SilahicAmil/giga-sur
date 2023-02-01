@@ -6,7 +6,7 @@ const ModalContent = ({ children }) => {
 
   return (
     <>
-      <div className="absolute left-0 top-0 right-0 bottom-0 m-auto flex h-2/3 w-2/3 items-center justify-center rounded-lg bg-white shadow-lg">
+      <div className="absolute left-0 top-0 right-0 bottom-0 m-auto flex h-2/3 w-2/3 items-center justify-center rounded-lg bg-white font-sans shadow-lg">
         <form
           className="flex h-full w-full flex-col items-center justify-center gap-8 bg-red-50"
           onSubmit={formSubmitHandler}

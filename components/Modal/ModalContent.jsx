@@ -1,5 +1,4 @@
 const ModalContent = ({ children }) => {
-  //  need to pass useState and stuff here through props
   const formSubmitHandler = (e) => {
     e.preventDefault();
   };

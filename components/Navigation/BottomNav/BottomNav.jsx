@@ -8,7 +8,7 @@ const BottomNav = ({}) => {
   const modalContent = document.getElementById("modal-content");
 
   return (
-    <div className="border-1 z-50 m-auto flex h-24 w-2/6 items-center justify-center gap-14 rounded-lg  bg-slate-700 shadow-2xl">
+    <div className="z-50 m-auto flex h-24 w-2/6 items-center justify-center gap-14 rounded-lg bg-slate-700 shadow-2xl">
       <BottomNavItems>
         <img
           alt="finder image icon"
@@ -49,7 +49,7 @@ const BottomNav = ({}) => {
       </BottomNavItems>
       {showModal &&
         createPortal(
-          <div onClick={(prevState) => !prevState}>
+          <div onClick={() => setShowModal(false)}>
             <ModalContent>
               <button onClick={(prevState) => !prevState}>Close</button>
             </ModalContent>

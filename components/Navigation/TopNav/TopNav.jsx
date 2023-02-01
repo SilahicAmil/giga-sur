@@ -4,7 +4,7 @@ const TopNav = ({}) => {
   const currDate = new Date().toLocaleString();
 
   return (
-    <div className="flex h-8 w-full items-center justify-center bg-transparent">
+    <div className="flex h-8 w-full items-center justify-center bg-transparent text-white">
       <nav className="flex">
         <div className="flex gap-4">
           <div className="ml-2 flex h-full items-center text-lg text-white ">
@@ -38,7 +38,7 @@ const TopNav = ({}) => {
         <div>
           <AiFillApple />
         </div>
-        <div className="mr-4 flex items-center justify-center text-sm">
+        <div className="text-md mr-4 flex items-center justify-center">
           {/* need to make this based off the current date and time */}
           <p>{currDate}</p>
         </div>

@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <TopNav />
-      <div className="h-full w-[100vw] bg-red-500 ">
+      <div className="h-full w-[100vw]  text-white">
         <div className="ml-auto flex h-5/6 w-full text-xl ">
           <DesktopItem />
         </div>

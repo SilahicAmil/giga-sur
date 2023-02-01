@@ -1,8 +1,8 @@
 const DesktopItem = ({}) => {
   return (
     <>
-      <div className="ml-auto flex font-sans">
-        <h1>Hello Everhbody</h1>
+      <div className=" ml-auto flex font-sans">
+        <p className="text-md">Hard Drive</p>
       </div>
     </>
   );

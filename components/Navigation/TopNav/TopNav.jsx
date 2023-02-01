@@ -4,7 +4,7 @@ const TopNav = ({}) => {
   const currDate = new Date().toLocaleString();
 
   return (
-    <div className="flex h-8 w-full items-center justify-center bg-transparent text-white">
+    <div className="flex h-8 w-full items-center justify-center border-b bg-transparent text-white shadow-2xl">
       <nav className="flex">
         <div className="flex gap-4">
           <div className="ml-2 flex h-full items-center text-lg text-white ">

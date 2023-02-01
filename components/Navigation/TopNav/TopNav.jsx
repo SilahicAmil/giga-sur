@@ -1,6 +1,8 @@
 import { AiFillApple } from "react-icons/ai";
 
 const TopNav = ({}) => {
+  const currDate = new Date().toLocaleString();
+
   return (
     <div className="flex h-8 w-full items-center justify-center bg-transparent">
       <nav className="flex">
@@ -38,7 +40,7 @@ const TopNav = ({}) => {
         </div>
         <div className="mr-4 flex items-center justify-center text-sm">
           {/* need to make this based off the current date and time */}
-          <p>Mon Jan 30 03:33 PM</p>
+          <p>{currDate}</p>
         </div>
       </div>
     </div>

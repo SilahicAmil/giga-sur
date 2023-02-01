@@ -12,6 +12,15 @@ const BottomNav = ({}) => {
           Safari
         </a>
       </BottomNavItems>
+      {/* Github goes to my github */}
+      <BottomNavItems>
+        <a href="https://github.com/silahicamil">Github</a>
+      </BottomNavItems>
+      {/* this will pop up a modal to email me. will make it look similiar to mac os mail */}
+      <BottomNavItems>
+        <button>Email</button>
+      </BottomNavItems>
+      <BottomNavItems></BottomNavItems>
     </div>
   );
 };

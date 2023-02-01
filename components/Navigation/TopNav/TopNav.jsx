@@ -38,7 +38,10 @@ const TopNav = ({}) => {
         <div>
           <AiOutlineWifi className="text-xl" />
         </div>
-        <div className="">
+        <div className="flex ">
+          <span className="mr-1.5 flex items-center justify-center text-sm">
+            69%
+          </span>
           <TiBatteryCharge className="text-2xl" />
         </div>
         <div className="mr-4 flex items-center justify-center text-sm">

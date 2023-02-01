@@ -10,12 +10,18 @@ const ModalContent = ({ children }) => {
           className="flex h-full w-full flex-col items-center justify-center gap-8 bg-red-50"
           onSubmit={formSubmitHandler}
         >
-          <div className="flex  ">
+          <div className="flex w-1/4 flex-col  ">
             <label htmlFor="message_to">To:</label>
-            <input type="text" readOnly value="Amil Silahic" className="" />
+            <input
+              type="text"
+              readOnly
+              value="Amil Silahic - amil@amil.dev"
+              className="flex w-full 
+              "
+            />
           </div>
 
-          <div className="flex w-1/3 flex-col">
+          <div className="flex w-1/4 flex-col">
             <label htmlFor="subject">Subject:</label>
             <input type="text" name="subject" />
           </div>

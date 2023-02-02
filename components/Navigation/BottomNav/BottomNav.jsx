@@ -1,5 +1,5 @@
 import BottomNavItems from "./BottomNavItems";
-import { Finder } from "../../../public/static/images/macos-finder-icon.jpg";
+import Finder from "../../../public/static/images/macos-finder-icon.jpg";
 import ModalContent from "../../Modal/ModalContent";
 import { createPortal } from "react-dom";
 import { useState } from "react";

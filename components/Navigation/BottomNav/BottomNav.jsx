@@ -12,7 +12,7 @@ const BottomNav = ({}) => {
       <BottomNavItems>
         <img
           alt="finder image icon"
-          src="../../../public/images/macos-finder-icon.jpg"
+          src="../../../public/macos-finder-icon.jpg"
           className="rounded-lg"
         />
       </BottomNavItems>
@@ -21,7 +21,7 @@ const BottomNav = ({}) => {
         <a href="https://amil.dev" target="_blank">
           <img
             alt="safar icon"
-            src="../../../public/images/safari-icon.png"
+            src="../../../public/safari-icon.png"
             className="rounded-lg"
           />
         </a>
@@ -31,7 +31,7 @@ const BottomNav = ({}) => {
         <a href="https://github.com/silahicamil" target="_blank">
           <img
             alt="github icon"
-            src="../../../public/images/github-logo.png"
+            src="../../../public/github-logo.png"
             className="rounded-lg"
           />
         </a>
@@ -42,7 +42,7 @@ const BottomNav = ({}) => {
         <button onClick={(e) => setShowModal(true)}>
           <img
             alt="mac os email icon"
-            src="../../../public/images/email-icon.png"
+            src="../../../public/email-icon.png"
             className="rounded-lg"
           />
         </button>
@@ -60,7 +60,7 @@ const BottomNav = ({}) => {
         <p>
           <img
             alt="mac os settings icon"
-            src="../../../public/images/settings-icon.png"
+            src="../../../public/settings-icon.png"
             className=" rounded-lg"
           />
         </p>

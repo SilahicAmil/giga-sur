@@ -6,11 +6,6 @@ const ModalContent = ({ children }) => {
     e.preventDefault();
   };
 
-  const eventHandler = (e, data) => {
-    console.log("Event Type", e.type);
-    console.log({ e, data });
-  };
-
   return (
     <>
       <ModalCard>

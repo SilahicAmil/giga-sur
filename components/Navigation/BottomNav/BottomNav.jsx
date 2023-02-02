@@ -12,7 +12,7 @@ const BottomNav = ({}) => {
       <BottomNavItems>
         <img
           alt="finder image icon"
-          src="../../../public/macos-finder-icon.jpg"
+          src={"../../../public/macos-finder-icon.jpg"}
           className="rounded-lg"
         />
       </BottomNavItems>
@@ -21,7 +21,7 @@ const BottomNav = ({}) => {
         <a href="https://amil.dev" target="_blank">
           <img
             alt="safar icon"
-            src="../../../public/safari-icon.png"
+            src={"../../../public/safari-icon.png"}
             className="rounded-lg"
           />
         </a>

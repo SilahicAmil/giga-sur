@@ -1,4 +1,5 @@
 import BottomNavItems from "./BottomNavItems";
+import { Finder } from "../../../public/static/images/macos-finder-icon.jpg";
 import ModalContent from "../../Modal/ModalContent";
 import { createPortal } from "react-dom";
 import { useState } from "react";
@@ -10,11 +11,7 @@ const BottomNav = ({}) => {
   return (
     <div className="z-50 m-auto flex h-24 w-2/6 items-center justify-center gap-14 rounded-lg bg-slate-700 shadow-2xl">
       <BottomNavItems>
-        <img
-          alt="finder image icon"
-          src={"/public/static/images/macos-finder-icon.jpg"}
-          className="rounded-lg"
-        />
+        <img alt="finder image icon" src={Finder} className="rounded-lg" />
       </BottomNavItems>
       {/* safari takes you to my portfolio */}
       <BottomNavItems>

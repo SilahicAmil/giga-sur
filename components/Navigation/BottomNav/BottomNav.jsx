@@ -49,11 +49,10 @@ const BottomNav = ({}) => {
       </BottomNavItems>
       {showModal &&
         createPortal(
-          <div onClick={() => setShowModal(false)}>
-            <ModalContent>
-              <button onClick={(prevState) => !prevState}>Close</button>
-            </ModalContent>
-          </div>,
+          <ModalContent>
+            <button onClick={() => setShowModal(false)}>Close</button>
+          </ModalContent>,
+
           modalContent
         )}
 

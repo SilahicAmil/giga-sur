@@ -38,7 +38,7 @@ const TopNav = ({}) => {
         <div>
           <AiOutlineWifi className="text-xl" />
         </div>
-        <div className="flex ">
+        <div className="flex">
           <span className="mr-1.5 flex items-center justify-center text-sm">
             69%
           </span>

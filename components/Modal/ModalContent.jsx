@@ -1,13 +1,22 @@
+import ModalActions from "./ModalActions";
+import ModalCard from "./ModalCard";
+
 const ModalContent = ({ children }) => {
   const formSubmitHandler = (e) => {
     e.preventDefault();
   };
 
+  const eventHandler = (e, data) => {
+    console.log("Event Type", e.type);
+    console.log({ e, data });
+  };
+
   return (
     <>
-      <div className="absolute left-0 top-0 right-0 bottom-0 m-auto flex h-2/3 w-2/3 items-center justify-center rounded-lg bg-white font-sans shadow-lg">
+      <ModalCard>
+        <ModalActions />
         <form
-          className="flex h-full w-full flex-col items-center justify-center gap-8 bg-red-50"
+          className="flex h-full  w-full flex-col items-center justify-center gap-8 rounded-lg bg-slate-400"
           onSubmit={formSubmitHandler}
         >
           <div className="flex w-1/4 flex-col  ">
@@ -16,26 +25,30 @@ const ModalContent = ({ children }) => {
               type="text"
               readOnly
               value="Amil Silahic - amil@amil.dev"
-              className="flex w-full 
-              "
+              className="flex w-full bg-white text-black"
             />
           </div>
 
           <div className="flex w-1/4 flex-col">
             <label htmlFor="subject">Subject:</label>
-            <input type="text" name="subject" />
+            <input type="text" name="subject" className="bg-white text-black" />
           </div>
 
           <div className="flex flex-col">
             <label htmlFor="message">Message:</label>
-            <textarea name="message" cols="40" rows="5"></textarea>
+            <textarea
+              name="message"
+              cols="40"
+              rows="5"
+              className="bg-white text-black"
+            />
           </div>
           <div>
             <button type="submit">Send</button>
           </div>
           {children}
         </form>
-      </div>
+      </ModalCard>
     </>
   );
 };

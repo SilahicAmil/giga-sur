@@ -23,7 +23,6 @@ body {
   margin: 0;
   display: flex;
   width: 100vw;
-
   min-height: 100vh;
   background: url("../public/static/images/mac-background.jpeg");
   color: black;

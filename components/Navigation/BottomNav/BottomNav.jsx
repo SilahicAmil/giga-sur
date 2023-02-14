@@ -13,7 +13,7 @@ const BottomNav = ({}) => {
   const modalContent = document.getElementById("modal-content");
 
   return (
-    <div className="z-50 m-auto flex h-24 w-2/6 items-center justify-center gap-14 rounded-lg bg-slate-700 shadow-2xl">
+    <div className="z-50 m-auto  flex h-24 w-4/6 items-center justify-around  rounded-lg bg-slate-700 shadow-2xl">
       <BottomNavItems>
         <img alt="finder image icon" src={FinderIcon} className="rounded-lg" />
       </BottomNavItems>

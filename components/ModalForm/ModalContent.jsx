@@ -95,10 +95,10 @@ const ModalContent = ({ children }) => {
               </div>
             ) : undefined}
           </div>
-          <div className="flex w-full items-center justify-center rounded-sm bg-sky-300 text-lg text-black">
-            {children}
-          </div>
         </section>
+        <div className=" flex h-8 w-full items-center justify-center rounded-sm bg-sky-300 text-lg text-black">
+          {children}
+        </div>
       </ModalCard>
     </>
   );

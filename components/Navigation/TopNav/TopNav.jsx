@@ -44,7 +44,7 @@ const TopNav = ({}) => {
           </span>
           <TiBatteryCharge className="text-2xl" />
         </div>
-        <div className="mr-4 flex items-center justify-center text-sm">
+        <div className="mr-4 flex  items-center justify-center text-sm">
           {/* need to make this based off the current date and time */}
           <p>{currDate}</p>
         </div>

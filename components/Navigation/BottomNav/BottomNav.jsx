@@ -2,7 +2,7 @@ import BottomNavItems from "./BottomNavItems";
 import EmailIcon from "../../../public/static/images/email-icon.png";
 import FinderIcon from "../../../public/static/images/macos-finder-icon.jpg";
 import GithubIcon from "../../../public/static/images/github-logo.png";
-import ModalContent from "../../Modal/ModalContent";
+import ModalContent from "../../ModalForm/ModalContent";
 import SafariIcon from "../../../public/static/images/safari-icon.png";
 import SettingsIcon from "../../../public/static/images/settings-icon.png";
 import { createPortal } from "react-dom";

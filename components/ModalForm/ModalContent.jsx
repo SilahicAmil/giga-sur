@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
-import ModalActions from "./ModalActions";
-import ModalCard from "./ModalCard";
+import ModalActions from "../ModalForm/ModalActions";
+import ModalCard from "../ModalForm/ModalCard";
 import emailjs from "@emailjs/browser";
 
 const ModalContent = ({ children }) => {
@@ -11,7 +11,7 @@ const ModalContent = ({ children }) => {
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-
+    // idk why .env files wont work for this
     emailjs.sendForm(
       "service_4hpeoas",
       "template_4jmafdm",

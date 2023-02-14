@@ -15,7 +15,7 @@ const BottomNav = ({}) => {
   return (
     <div className="z-50 m-auto  flex h-24 w-4/6 items-center justify-around  rounded-lg bg-slate-700 shadow-2xl">
       <BottomNavItems>
-        <a href="../../../public/static/_UPDATED-RESUME.pdf" download>
+        <a href="../../../public/static/AMIL-SILAHIC-RESUME.pdf" download>
           <img
             alt="finder image icon"
             src={FinderIcon}
@@ -26,7 +26,7 @@ const BottomNav = ({}) => {
       {/* safari takes you to my portfolio */}
       <BottomNavItems>
         <a href="https://amil.dev" target="_blank">
-          <img alt="safar icon" src={SafariIcon} className="rounded-lg" />
+          <img alt="safari icon" src={SafariIcon} className="rounded-lg" />
         </a>
       </BottomNavItems>
       {/* Github goes to my github */}

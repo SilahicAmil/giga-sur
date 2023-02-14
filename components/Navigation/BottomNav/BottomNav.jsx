@@ -39,7 +39,7 @@ const BottomNav = ({}) => {
       {showModal &&
         createPortal(
           <ModalContent>
-            <button onClick={() => setShowModal(false)}>Close</button>
+            <button onClick={() => setShowModal(false)}>x</button>
           </ModalContent>,
 
           modalContent

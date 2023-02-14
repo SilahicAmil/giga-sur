@@ -26,7 +26,8 @@ const ModalContent = ({ children }) => {
   return (
     <>
       <ModalCard>
-        <ModalActions />
+        <ModalActions>{children}</ModalActions>
+
         <section className="h-full w-full bg-white dark:bg-gray-900">
           <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-16">
             <form
@@ -96,9 +97,9 @@ const ModalContent = ({ children }) => {
             ) : undefined}
           </div>
         </section>
-        <div className=" flex h-8 w-full items-center justify-center rounded-sm bg-sky-300 text-lg text-black">
+        {/* <div className=" flex h-8 w-full items-center justify-center rounded-sm bg-sky-300 text-lg text-black">
           {children}
-        </div>
+        </div> */}
       </ModalCard>
     </>
   );

@@ -9,14 +9,16 @@ const ModalContent = ({ children }) => {
 
   const [formSubmitted, setFormSubmitted] = useState(false);
 
+  console.log(import.meta.env.VITE_EMAIL_PUBLIC_KEY);
+
   const formSubmitHandler = (e) => {
     e.preventDefault();
     // idk why .env files wont work for this
     emailjs.sendForm(
-      "service_4hpeoas",
-      "template_4jmafdm",
+      import.meta.env.VITE_EMAIL_SERVICE_KEY,
+      import.meta.env.VITE_EMAIL_TEMPLATE_KEY,
       formRef.current,
-      "SCNS9M5weTyzUQKKH"
+      import.meta.env.VITE_EMAIL_PUBLIC_KEY
     );
     // add uef for removing the formSubmitted p tag
     setFormSubmitted(true);

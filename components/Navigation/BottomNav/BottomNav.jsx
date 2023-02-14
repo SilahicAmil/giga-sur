@@ -23,20 +23,19 @@ const BottomNav = ({}) => {
           />
         </a>
       </BottomNavItems>
-      {/* safari takes you to my portfolio */}
+
       <BottomNavItems>
         <a href="https://amil.dev" target="_blank">
           <img alt="safari icon" src={SafariIcon} className="rounded-lg" />
         </a>
       </BottomNavItems>
-      {/* Github goes to my github */}
+
       <BottomNavItems>
         <a href="https://github.com/silahicamil" target="_blank">
           <img alt="github icon" src={GithubIcon} className="rounded-lg" />
         </a>
       </BottomNavItems>
-      {/* this will pop up a modal to email me. will make it look similiar to mac os mail */}
-      {/* Might want to make this into its own component later */}
+
       <BottomNavItems>
         <button onClick={(e) => setShowModal(true)}>
           <img alt="mac os email icon" src={EmailIcon} className="rounded-lg" />

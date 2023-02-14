@@ -18,7 +18,7 @@ const ModalContent = ({ children }) => {
       formRef.current,
       "SCNS9M5weTyzUQKKH"
     );
-    // add uef for removing the formSubmitted
+    // add uef for removing the formSubmitted p tag
     setFormSubmitted(true);
     formRef.current.reset();
   };

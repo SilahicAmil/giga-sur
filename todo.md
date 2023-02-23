@@ -1,0 +1,3 @@
+- Add iFrame modal to safari logo onClick
+- Add modal for finder logo to open a modal of the finder with resume
+- Make the modals draggable around the desktop

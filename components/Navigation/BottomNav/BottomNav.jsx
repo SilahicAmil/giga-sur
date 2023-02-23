@@ -24,6 +24,7 @@ const BottomNav = ({}) => {
         </a>
       </BottomNavItems>
 
+      {/* this will open a modal with an iFrame of amil.dev */}
       <BottomNavItems>
         <a href="https://amil.dev" target="_blank">
           <img alt="safari icon" src={SafariIcon} className="rounded-lg" />

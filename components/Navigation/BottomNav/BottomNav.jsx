@@ -11,7 +11,8 @@ import { useState } from "react";
 
 const BottomNav = ({}) => {
   const [showModal, setShowModal] = useState(false);
-  const formModalContent = document.getElementById("modal-content");
+  const [showWebModal, setShowWebModal] = useState(false);
+  const modalContent = document.getElementById("modal-content");
   const webModalContent = document.getElementById("web-modal-content");
 
   return (
@@ -28,14 +29,14 @@ const BottomNav = ({}) => {
 
       {/* this will open a modal with an iFrame of amil.dev */}
       <BottomNavItems>
-        <button onClick={() => setShowModal(true)}>
+        <button onClick={() => setShowWebModal(true)}>
           <img alt="safari icon" src={SafariIcon} className="rounded-lg" />
         </button>
       </BottomNavItems>
-      {showModal &&
+      {showWebModal &&
         createPortal(
           <WebModalContent>
-            <button onClick={() => setShowModal(false)}>X</button>
+            <button onClick={() => setShowWebModal(false)}>X</button>
           </WebModalContent>,
 
           webModalContent
@@ -58,7 +59,7 @@ const BottomNav = ({}) => {
             <button onClick={() => setShowModal(false)}>x</button>
           </ModalContent>,
 
-          formModalContent
+          modalContent
         )}
 
       <BottomNavItems>

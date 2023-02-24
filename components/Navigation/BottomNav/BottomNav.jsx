@@ -5,12 +5,14 @@ import GithubIcon from "../../../public/static/images/github-logo.png";
 import ModalContent from "../../ModalForm/ModalContent";
 import SafariIcon from "../../../public/static/images/safari-icon.png";
 import SettingsIcon from "../../../public/static/images/settings-icon.png";
+import WebModalContent from "../../WebModal/WebModalContent";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 
 const BottomNav = ({}) => {
   const [showModal, setShowModal] = useState(false);
-  const modalContent = document.getElementById("modal-content");
+  const formModalContent = document.getElementById("modal-content");
+  const webModalContent = document.getElementById("web-modal-content");
 
   return (
     <div className="z-50 m-auto  flex h-24 w-4/6 items-center justify-around  rounded-lg bg-slate-700 shadow-2xl">
@@ -26,10 +28,18 @@ const BottomNav = ({}) => {
 
       {/* this will open a modal with an iFrame of amil.dev */}
       <BottomNavItems>
-        <a href="https://amil.dev" target="_blank">
+        <button onClick={() => setShowModal(true)}>
           <img alt="safari icon" src={SafariIcon} className="rounded-lg" />
-        </a>
+        </button>
       </BottomNavItems>
+      {showModal &&
+        createPortal(
+          <WebModalContent>
+            <button onClick={() => setShowModal(false)}>X</button>
+          </WebModalContent>,
+
+          webModalContent
+        )}
 
       <BottomNavItems>
         <a href="https://github.com/silahicamil" target="_blank">
@@ -48,7 +58,7 @@ const BottomNav = ({}) => {
             <button onClick={() => setShowModal(false)}>x</button>
           </ModalContent>,
 
-          modalContent
+          formModalContent
         )}
 
       <BottomNavItems>

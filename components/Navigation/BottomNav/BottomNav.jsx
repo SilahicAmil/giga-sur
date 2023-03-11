@@ -18,7 +18,10 @@ const BottomNav = ({}) => {
   return (
     <div className="z-20 m-auto  flex h-24 w-2/6 items-center justify-center gap-12  rounded-lg bg-slate-700 shadow-2xl">
       <BottomNavItems>
-        <a href="../../../public/static/Amil-Silahic-Resume-March.pdf" download>
+        <a
+          href="../../../public/static/Amil-Silahic-Web-Dev-Resume.pdf"
+          download
+        >
           <img
             alt="finder image icon"
             src={FinderIcon}

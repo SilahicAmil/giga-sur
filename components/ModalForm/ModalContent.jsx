@@ -38,7 +38,7 @@ const ModalContent = ({ children }) => {
         <ModalActions>{children}</ModalActions>
 
         <section className="h-full w-full bg-white dark:bg-gray-900">
-          <div className="mx-auto max-w-screen-md py-8 px-4 lg:py-8">
+          <div className="mx-auto max-w-screen-md py-8 px-4 ">
             <form
               onSubmit={formSubmitHandler}
               ref={formRef}

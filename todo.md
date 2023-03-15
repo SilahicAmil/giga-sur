@@ -5,3 +5,4 @@
 - Make Safari Modal look like safari
 
 - Add a fake login screen
+- onClick of Modal change z-index to show it above everything else

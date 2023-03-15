@@ -8,8 +8,6 @@ import emailjs from "@emailjs/browser";
 const ModalContent = ({ children }) => {
   const formRef = useRef();
 
-  console.log(import.meta.env.VITE_EMAIL_PUBLIC_KEY);
-
   const formSubmitHandler = (e) => {
     e.preventDefault();
 

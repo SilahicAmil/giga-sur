@@ -13,15 +13,18 @@ const ModalContent = ({ children }) => {
   const formSubmitHandler = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      import.meta.env.VITE_EMAIL_SERVICE_KEY,
-      import.meta.env.VITE_EMAIL_TEMPLATE_KEY,
-      formRef.current,
-      import.meta.env.VITE_EMAIL_PUBLIC_KEY
-    );
-
-    formRef.current.reset();
-    return toast.success("Message Sent!");
+    try {
+      emailjs.sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_KEY,
+        import.meta.env.VITE_EMAIL_TEMPLATE_KEY,
+        formRef.current,
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      );
+      formRef.current.reset();
+      return toast.success("Message Sent!");
+    } catch (err) {
+      return toast.error("Unable to send Message. Please Try Again!");
+    }
   };
 
   return (

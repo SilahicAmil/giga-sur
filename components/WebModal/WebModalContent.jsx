@@ -1,9 +1,11 @@
+import Draggable, { DraggableCore } from "react-draggable";
+
 import ModalCard from "../ModalForm/ModalCard";
 
 const WebModalContent = ({ children }) => {
   return (
-    <div>
-      <div className="absolute top-0 left-0 bottom-0 right-0 z-50 m-10 ml-auto h-3/4 w-5/6 items-center justify-center rounded-lg  bg-[#1f2428] shadow-2xl">
+    <Draggable>
+      <div className="absolute top-0 left-0 bottom-0 right-0 z-50 m-10 ml-auto h-3/4 w-4/6 items-center justify-center rounded-lg  bg-[#1f2428] shadow-2xl">
         <div className=" mt-2 h-full w-full ">
           <button className="mr-auto ml-4 flex h-6  w-6 items-center justify-center rounded-full bg-red-500 p-2  text-white">
             {children}
@@ -17,7 +19,7 @@ const WebModalContent = ({ children }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Draggable>
   );
 };
 export default WebModalContent;

@@ -16,7 +16,7 @@ const BottomNav = ({}) => {
   const webModalContent = document.getElementById("web-modal-content");
 
   return (
-    <div className="z-20 m-auto  flex h-24 w-2/6 items-center justify-center gap-12  rounded-lg bg-slate-700 shadow-2xl">
+    <div className="z-20 m-auto flex items-center  justify-around  rounded-lg bg-slate-700 shadow-2xl md:w-2/3 md:p-4 lg:h-24 lg:w-2/6 lg:p-2">
       <BottomNavItems>
         <a
           href="../../../public/static/Amil-Silahic-Web-Dev-Resume.pdf"
@@ -30,10 +30,9 @@ const BottomNav = ({}) => {
         </a>
       </BottomNavItems>
 
-      {/* this will open a modal with an iFrame of amil.dev */}
       <BottomNavItems>
         <button onClick={() => setShowWebModal(true)}>
-          <img alt="safari icon" src={SafariIcon} className="rounded-lg" />
+          <img alt="safari icon" src={SafariIcon} className=" rounded-lg" />
         </button>
       </BottomNavItems>
       {showWebModal &&

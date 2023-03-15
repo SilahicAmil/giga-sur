@@ -37,7 +37,7 @@ const ModalContent = ({ children }) => {
       <ModalCard>
         <ModalActions>{children}</ModalActions>
 
-        <section className="h-full w-full bg-white dark:bg-gray-900">
+        <section className="h-full w-full bg-gray-900">
           <div className="mx-auto max-w-screen-md py-8 px-4 ">
             <form
               onSubmit={formSubmitHandler}
@@ -47,7 +47,7 @@ const ModalContent = ({ children }) => {
               <div>
                 <label
                   htmlFor="name"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="mb-2 block text-sm font-medium text-white "
                 >
                   Your Name
                 </label>
@@ -55,7 +55,7 @@ const ModalContent = ({ children }) => {
                   type="text"
                   id="from_name"
                   name="from_name"
-                  className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+                  className="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-300  bg-gray-700 p-2.5 text-sm text-gray-900  placeholder-gray-400 shadow-sm"
                   placeholder="John Smith"
                   required
                 />
@@ -63,7 +63,7 @@ const ModalContent = ({ children }) => {
               <div>
                 <label
                   htmlFor="email"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="mb-2 block text-sm font-medium  text-gray-300"
                 >
                   Your email
                 </label>
@@ -71,7 +71,7 @@ const ModalContent = ({ children }) => {
                   type="email"
                   id="email"
                   name="reply_to"
-                  className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+                  className="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-700 p-2.5 text-sm text-gray-900  placeholder-gray-400 shadow-sm"
                   placeholder="name@gmail.com"
                   required
                 />
@@ -79,14 +79,14 @@ const ModalContent = ({ children }) => {
               <div>
                 <label
                   htmlFor="myemail"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="mb-2 block text-sm font-medium  text-gray-300"
                 >
                   Send To
                 </label>
                 <input
                   type="myemail"
                   id="myemail"
-                  className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+                  className="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-700 p-2.5 text-sm text-gray-900  placeholder-gray-400 shadow-sm"
                   placeholder="amil@amil.dev"
                   readOnly
                 />
@@ -94,7 +94,7 @@ const ModalContent = ({ children }) => {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400"
+                  className="mb-2 block text-sm font-medium  text-gray-400"
                 >
                   Your message
                 </label>
@@ -102,13 +102,13 @@ const ModalContent = ({ children }) => {
                   id="message"
                   name="message"
                   rows="6"
-                  className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+                  className="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-700 p-2.5 text-sm text-gray-900  placeholder-gray-400 shadow-sm"
                   placeholder="Leave a message..."
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="hover:bg-primary-800 dark:hover:bg-primary-700  rounded-lg bg-sky-700 py-3 px-5  text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:focus:ring-sky-800 sm:w-fit"
+                className="hover:bg-primary-800 hover:bg-primary-700  rounded-lg bg-sky-700  py-3  px-5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-sky-300  sm:w-fit"
               >
                 Send message
               </button>

@@ -16,7 +16,7 @@ const BottomNav = ({}) => {
   const webModalContent = document.getElementById("web-modal-content");
 
   return (
-    <div className="z-20 m-auto flex items-center  justify-around  rounded-lg bg-slate-700 shadow-2xl md:w-2/3 md:p-4 lg:h-24 lg:w-2/6 lg:p-2">
+    <div className="z-20 m-auto flex items-center justify-around  rounded-lg bg-slate-700 shadow-2xl md:w-2/3 md:p-4 lg:h-24 lg:w-2/6 lg:p-2">
       <BottomNavItems>
         <a
           href="../../../public/static/Amil-Silahic-Web-Dev-Resume.pdf"
